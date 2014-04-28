@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to "NTC Enrollment System", '#', id: "logo" %>
+      <nav>
+        <ul class="nav pull-right">
+          <li><%= link_to "Home",    'root_path' %></li>
+          <li><%= link_to "Courses",    'courses_path' %></li>
+          <li><%= link_to "Schedules", 'schedules_path' %></li>
+	  <li><%= link_to "Instructors", 'instructors_path' %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
