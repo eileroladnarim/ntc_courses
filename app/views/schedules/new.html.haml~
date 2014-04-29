@@ -1,0 +1,83 @@
+%h2 Form Examples
+
+= widget_box title: 'Text inputs', icon: 'align-justify', class: 'nopadding' do
+  %form.form-horizontal{action: '#', method: 'get'}
+    .form-inputs
+      .control-group
+        %label.control-label Normal text input
+        .controls
+          %input{type: 'text'}
+      .control-group
+        %label.control-label Password input
+        .controls
+          %input{type: 'password'}
+      .control-group
+        %label.control-label Input with description
+        .controls
+          %input{type: 'text'}
+            %p.help-block This is a description
+      .control-group
+        %label.control-label Input with placeholder
+        .controls
+          %input{placeholder: 'This is a placeholder...', type: 'text'}
+      .control-group
+        %label.control-label Normal textarea
+        .controls
+          %textarea{style: 'height:50px'}
+      %fieldset
+        %legend Select, radio, checkboxes, and file inputs
+        .control-group
+          %label.control-label Select input
+          .controls
+            %select.chzn-select
+              %option First option
+              %option Second option
+              %option Third option
+              %option Fourth option
+              %option Fifth option
+              %option Sixth option
+              %option Seventh option
+              %option Eighth option
+        .control-group
+          %label.control-label Multiple Select input
+          .controls
+            %select.chzn-select{multiple: 'multiple'}
+              %option First option
+              %option{selected: 'selected'} Second option
+              %option Third option
+              %option Fourth option
+              %option Fifth option
+              %option Sixth option
+              %option Seventh option
+              %option Eighth option
+        .control-group
+          %label.control-label Radio inputs
+          .controls
+            %label
+              %input{name: 'radios', type: 'radio'}
+              First One
+            %label
+              %input{name: 'radios', type: 'radio'}
+              Second One
+            %label
+              %input{name: 'radios', type: 'radio'}
+              Third One
+        .control-group
+          %label.control-label Checkboxes
+          .controls
+            %label
+              %input{name: 'radios', type: 'checkbox'}
+              First One
+            %label
+              %input{name: 'radios', type: 'checkbox'}
+              Second One
+            %label
+              %input{name: 'radios', type: 'checkbox'}
+              Third One
+        .control-group
+          %label.control-label File upload input
+          .controls
+            %input{type: 'file'}/
+
+    .form-actions
+      %button.btn.btn-primary{type: 'submit'} Saves

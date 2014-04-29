@@ -1,0 +1,22 @@
+#span4
+  %h3 Add Instructor
+  %form{ :action => "", :method => "post"}
+    %fieldset
+
+      %label{:for => "f_name"} First Name
+      %input{:type => "text", :name => "course", :class => "text span4"}
+
+      %label{:for => "f_name"} First Name
+      %input{:type => "text", :name => "course", :class => "text span4"}
+     
+      %label{:for => "f_name"} First Name
+      %input{:type => "text", :name => "course", :class => "text span4"}
+
+      %label{:for => "start_date"} Start Date 
+      %input{:type=>"text", :required => true, :class=> 'datepicker span4'}
+
+      %label
+      %input{:type => "submit", :value => "Add Instructor", :class => "button btn-primary span4"}
+
+ 
+%h3 Courses 

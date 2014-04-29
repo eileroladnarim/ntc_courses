@@ -34,5 +34,4 @@
       %label
       %input{:type => "submit", :value => "Create Schedule", :class => "button btn-primary span4"}
 
-#span8 
-%h3 Schedule
+#span8 Schedule

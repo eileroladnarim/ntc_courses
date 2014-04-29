@@ -1,14 +1,14 @@
 CoursesNtc::Application.routes.draw do
  
 resources :users  
-resources :schedules  
-resources :courses
-resources :instructors
+#resources :schedules  
+#resources :courses
+#resources :instructors
  
  root  'static_pages#home' 
  match '/help',    to: 'static_pages#help',    via: 'get'
-  #match '/about',   to: 'static_pages#about',   via: 'get'
-  #match '/contact', to: 'static_pages#contact', via: 'get' 
+ #match '/about',   to: 'static_pages#about',   via: 'get'
+ #match '/contact', to: 'static_pages#contact', via: 'get' 
 match '/courses',    to: 'static_pages#courses',    via: 'get'
 match '/schedules',    to: 'static_pages#schedules',    via: 'get'
 match '/instructors',    to: 'static_pages#instructors',    via: 'get'

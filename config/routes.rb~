@@ -1,9 +1,10 @@
 CoursesNtc::Application.routes.draw do
-  get "instructors/new"
+ 
 resources :users  
 resources :schedules  
 resources :courses
-  
+resources :instructors
+ 
  root  'static_pages#home' 
  match '/help',    to: 'static_pages#help',    via: 'get'
   #match '/about',   to: 'static_pages#about',   via: 'get'
