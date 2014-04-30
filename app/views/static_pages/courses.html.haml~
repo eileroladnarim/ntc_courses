@@ -13,5 +13,5 @@
       %label
       %input{:type => "submit", :value => "Submit", :class => "button btn-primary span4"}
 
-#span8 
-%h3 Schedule
+ 
+%h3 Courses 

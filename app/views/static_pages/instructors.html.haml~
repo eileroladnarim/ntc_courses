@@ -4,15 +4,15 @@
     %fieldset
 
       %label{:for => "f_name"} First Name
-      %input{:type => "text", :name => "course", :class => "text span4"}
+      %input{:type => "text", :name => "f_name", :class => "text span4"}
 
-      %label{:for => "f_name"} First Name
-      %input{:type => "text", :name => "course", :class => "text span4"}
+      %label{:for => "m_name"} Middle Name
+      %input{:type => "text", :name => "m_name", :class => "text span4"}
      
-      %label{:for => "f_name"} First Name
-      %input{:type => "text", :name => "course", :class => "text span4"}
+      %label{:for => "l_name"} Last Name
+      %input{:type => "text", :name => "l_name", :class => "text span4"}
 
-      %label{:for => "start_date"} Start Date 
+      %label{:for => "birth_date"} Birth Date 
       %input{:type=>"text", :required => true, :class=> 'datepicker span4'}
 
       %label

@@ -19,7 +19,7 @@ def create
   private
 
  def instructor_params
-      params.require(:instructor).permit(:first_name, :middle_name, :last_name, :birth_date)
+      params.require(:instructor).permit(:name, :birth_date)
     end
 
 end
