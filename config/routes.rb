@@ -12,6 +12,8 @@ resources :sessions, only: [:new,:create,:destroy]
 match '/courses',    to: 'courses#new',    via: 'get'
 match '/schedules',    to: 'schedules#new',    via: 'get'
 match '/instructors',    to: 'instructors#new',    via: 'get'
+match '/signin',  to: 'sessions#new',         via: 'get'
+match '/signout', to: 'sessions#destroy',     via: 'delete'
 
 
 # The priority is based upon order of creation: first created -> highest priority.

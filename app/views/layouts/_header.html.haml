@@ -5,7 +5,18 @@
       %nav
         %ul.nav.pull-right
           %li= link_to "Home",    root_path
-          %li= link_to "Courses",    courses_path
-          %li= link_to "Schedules", schedules_path
-          %li= link_to "Instructors", instructors_path
-          %li= link_to "Sign in", '#'
+          -if signed_in?
+            %li= link_to "Users",'#'
+            %li= link_to "Courses",    courses_path
+            %li= link_to "Schedules", schedules_path
+            %li= link_to "Instructors", instructors_path
+            %li.dropdown#fat-menu
+              =link_to "Account"  ,"#" , {:class=>"dropdown-toggle", "data-toggle"=>"dropdown"}
+              %b.caret.white-caret
+              %ul.dropdown-menu
+                %li= link_to "Profile", current_user
+                %li=link_to "Settings", '#'
+                %li.divider
+                %li= link_to "Sign out", signout_path, method: "delete"
+          -else         
+            %li= link_to "Sign in", signin_path

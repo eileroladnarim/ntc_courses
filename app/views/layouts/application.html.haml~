@@ -11,6 +11,6 @@
     = render 'layouts/header'
     .container
       -flash.each do |key, value|
-        =content_tag(:div, value, class: "alert alert-#{key}")
+         .alert =value
       = yield
       = render 'layouts/footer'
