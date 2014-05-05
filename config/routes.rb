@@ -10,6 +10,7 @@ resources :sessions, only: [:new,:create,:destroy]
  #match '/about',   to: 'static_pages#about',   via: 'get'
  #match '/contact', to: 'static_pages#contact', via: 'get' 
 match '/courses',    to: 'courses#new',    via: 'get'
+match '/courses/produceexel',    to: 'courses#produceexel',    via: 'get'
 match '/schedules',    to: 'schedules#new',    via: 'get'
 match '/instructors',    to: 'instructors#new',    via: 'get'
 match '/signin',  to: 'sessions#new',         via: 'get'
