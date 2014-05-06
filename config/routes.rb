@@ -1,17 +1,20 @@
 CoursesNtc::Application.routes.draw do
  
 resources :users  
-#resources :schedules  
-resources :courses, only: [:create, :destroy]
-resources :instructors, only: [:create, :destroy]
+resources :schedules, only: [:create, :destroy] 
+resources :courses , only: [:create, :destroy, :produceexcel]
+resources :instructors, only: [:create, :destroy,:produceexcel]
 resources :sessions, only: [:new,:create,:destroy]
  root  'static_pages#home' 
  match '/help',    to: 'static_pages#help',    via: 'get'
  #match '/about',   to: 'static_pages#about',   via: 'get'
  #match '/contact', to: 'static_pages#contact', via: 'get' 
+match '/courses/produceexcel' => 'courses#produceexcel', :as => :produceexcel, via: 'get'
 match '/courses',    to: 'courses#new',    via: 'get'
-match '/courses/produceexel',    to: 'courses#produceexel',    via: 'get'
 match '/schedules',    to: 'schedules#new',    via: 'get'
+
+match '/instructors/produceexcel' => 'instructors#produceexcel', :as => :produceexcel2, via: 'get'
+
 match '/instructors',    to: 'instructors#new',    via: 'get'
 match '/signin',  to: 'sessions#new',         via: 'get'
 match '/signout', to: 'sessions#destroy',     via: 'delete'

@@ -9,6 +9,8 @@ gem 'sprockets', '2.11.0'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'bootstrap-datepicker-rails'
 gem 'axlsx'
+gem 'axlsx_rails'
+gem 'datejs-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'

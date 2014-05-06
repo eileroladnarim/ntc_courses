@@ -2,9 +2,9 @@
     %h1 Add Schedule
     =form_for @schedule do |f|
         = f.label :courses
-        = f.collection_select(:courses, Course.all, :id, :name, prompt: true)
+        = f.collection_select(:courses, Course.all, :name, :name, prompt: true)
         = f.label :instructor
-        = f.collection_select(:instructors, Instructor.all, :first_name, :last_name, prompt: true)
+        = f.collection_select(:instructors, Instructor.all, :last_name, :last_name, prompt: true)
         = f.label :training_manager
         = f.text_field :training_manager
         = f.label :actual_number_of_days

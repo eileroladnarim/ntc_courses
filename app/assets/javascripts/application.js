@@ -17,3 +17,4 @@
 //= require_tree .
 //= require bootstrap-datepicker
 
+$("#datepicker").formatDate('yyyy-mm-dd');

@@ -4,7 +4,6 @@
         = f.label :name
         = f.text_field :name
         = f.label :description
-        = f.text_area  :description \
-            %br
+        = f.text_area  :description 
         = f.submit "Create", { :class => 'button' }
- 
+    = link_to "Label",{ :controller => :courses, :action => :produceexcel}
